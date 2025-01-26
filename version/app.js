@@ -4,12 +4,11 @@ app = express();
 var response;
 
 app.get('/', function (req, res) {
+    // Change the response to version 2
+    response = 'This is version 2 of the app.' + '\n';
 
-    response = 'This is version 1 of the app.' + '\n';
-
-    //send the response to the client
+    // Send the response to the client
     res.send(response);
-
 });
 
 app.listen(8080, function () {
