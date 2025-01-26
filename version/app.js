@@ -4,8 +4,8 @@ app = express();
 var response;
 
 app.get('/', function (req, res) {
-    // Change the response to version 2
-    response = 'This is version 2 of the app.' + '\n';
+    // Change the response to version 3
+    response = 'This is version 3 of the app.' + '\n';
 
     // Send the response to the client
     res.send(response);
